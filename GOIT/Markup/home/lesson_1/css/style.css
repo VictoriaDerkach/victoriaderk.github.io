@@ -20,9 +20,6 @@ img {
 	height: 180px;
 	border-radius: 100%;
 }
-.center {
-    text-align: center;
-}
 p {
 	margin-left:20px;
 }
@@ -44,9 +41,25 @@ li {
     width: 100%;
     margin: 0 0 20px 0;
 }
-#header, #content, #contact, #footer {
+#header {
+	border-bottom: 1px solid;
 	margin: 20px;
-} 
+	padding-bottom: 20px;
+	text-align: center;
+}
+#content {
+	border-bottom: 1px solid;
+	margin: 20px;
+	padding-bottom: 10px;	
+}
+#contact{
+	border-bottom: 1px solid;
+	margin: 20px;
+	padding-bottom: 20px;
+}
+#footer {
+	margin: 20px;
+}
 .margin-bottom{
 	margin-bottom: 20px;
 }

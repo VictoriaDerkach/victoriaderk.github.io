@@ -1,0 +1,217 @@
+body{
+	height: 100%;
+	background: url(../img/background.png);
+}
+.wrapper{
+	font-family: Tahoma, sans-serif;
+	height: 100%;
+	background-color: #fff;
+	width: 1000px;
+	margin: auto;
+	-webkit-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
+}
+header{
+	height: 175px;
+	width: 100%;
+	margin-top: 38px;
+}
+.logo{
+	background-repeat: no-repeat;
+	padding: 10px 0 0 20px;
+	width: 300px;
+}
+.logo p{
+	font-size: 12px;
+	color: #128aa7;
+	margin: -70px 0 0 73px;
+}
+.contacts{
+	font-size: 12px;
+	color: #128aa7;
+	float: right;
+	margin: -110px 25px 0 0;
+	line-height: 20px;
+}
+.contacts p:first-child{
+	font-weight: bold;
+}
+.sprites{
+	float: right;
+	margin-top: -5px;
+	margin-right: 15px;
+}
+.sprites ul li{
+	height: 44px;
+	float: left;
+}
+.sprites ul li a{
+	width: 53px;
+	display: block;
+	padding-top: 42px;
+	font-size: 10px;
+	color: #128aa7;
+}
+#india span{
+	padding-left: 6px;
+}
+#nepal span, #tibet span, #bhutan span {
+	padding-left: 7px;
+}
+#sri-lanka span{
+	padding-left: 7px;
+	position: relative;
+	left: -12px;
+	width: 53px;
+	display: block;
+}
+#india{
+	background: url('../img/countries.png') 0 0;
+	background-repeat: no-repeat;
+}
+#nepal{
+	background: url('../img/countries.png') -58px 0;
+	background-repeat: no-repeat;
+}
+#tibet{
+	background: url('../img/countries.png') -114px 0;
+	background-repeat: no-repeat;
+}
+#bhutan{
+	background: url('../img/countries.png') -167px 0;
+	background-repeat: no-repeat;
+}
+#sri-lanka{
+	background: url('../img/countries.png') -224px 0;
+	background-repeat: no-repeat;
+}
+#maldives{
+	background: url('../img/countries.png') -281px 0;
+	background-repeat: no-repeat;
+}
+.photo{
+	background-image: url(../img/photo.png);
+	background-repeat: no-repeat;
+	height: 236px;
+	width: 100%;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+#nav{
+	width: 100%;
+	height: 30px;
+	list-style: none;
+	background-color: #303030;
+	-webkit-box-shadow: 0px 5px 5px -2px rgba(48,48,48,1);
+	-moz-box-shadow: 0px 5px 5px -2px rgba(48,48,48,1);
+	box-shadow: 0px 5px 5px -2px rgba(48,48,48,1);
+	border-bottom: 1px solid #000;
+	float: left;
+}
+#nav li{
+	float:left;
+	position:relative;
+	display:block;
+}
+.triangle{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 2px 0 2px;
+	border-color: #ffffff transparent transparent transparent;
+}
+#nav li a{
+	font-size: 14px;
+	display: block;
+	padding: 7px 36px;
+	color: #fff;
+	text-decoration: none;
+}
+#nav li a:hover{
+	color:#fff;
+	background-color: #303030;;
+}
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px;
+	-webkit-transition:0.25s linear opacity;
+	margin-top: 3px;
+}
+#nav ul li{
+	padding-top:1px; 
+	float:none;
+	background-color: #303030;
+	-webkit-box-shadow: 0px 5px 5px -2px rgba(48,48,48,1);
+	-moz-box-shadow: 0px 5px 5px -2px rgba(48,48,48,1);
+	box-shadow: 0px 5px 5px -2px rgba(48,48,48,1);
+}
+#nav ul a{
+	white-space:nowrap; 
+	display:block;
+}
+#nav li:hover ul{
+	left:0; 
+}
+#nav li:hover a{ 
+	background-color: #303030;
+}
+#nav li:hover ul a{ 
+	text-decoration:none;
+	-webkit-transition:-webkit-transform 0.075s linear;
+}
+#nav li:hover ul li a:hover{ 
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+}
+#main{
+	width: 100%;
+	overflow: hidden;
+}
+#main p{
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 15px;
+	color: #424c43;
+}
+#left-aside{
+	width: 21%;
+	float: left;
+	padding-bottom: 20000px;	
+	margin-bottom: -20000px;
+	background-color: #edeef0;
+	border: solid 1px #c7cacf;
+}
+#section{
+	width: 58%;	
+	float: left;
+	background: #e34456;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	background-color: #fff;
+}
+#right-aside{
+	width: 21%;
+	float: right;
+	background: #e3e244;	
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	background-color: #edeef0;
+	border: solid 1px #c7cacf;
+}
+#left-aside p:first-child, #right-aside p:first-child{
+	font-weight: bolder;
+	text-align: center;
+	padding: 5px;
+	color: #424c43;
+}
+.copyright{
+	clear: both;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	font-family: Tahoma, sans-serif;
+}

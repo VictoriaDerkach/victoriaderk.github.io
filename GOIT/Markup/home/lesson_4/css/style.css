@@ -35,7 +35,7 @@ header{
 	float: right;
 	position: relative;
 	line-height: 20px;
-	top: -116px;
+	top: -185px;
     left: -26px;
 }
 .contacts p:first-child{
@@ -44,7 +44,7 @@ header{
 .sprites{
 	float: right;
 	position: relative;
-	top: -6px;
+	top: -76px;
     left: 106px;
 }
 .sprites ul li{
@@ -187,13 +187,12 @@ header{
 	padding-bottom: 20000px;	
 	margin-bottom: -20000px;
 	background-color: #edeef0;
-	box-shadow: inset -1px 0px 0px 0px #838383;
-
+	border: 1px solid #c7cacf;
+	box-sizing: border-box;
 }
 #section{
 	width: 580px;	
 	float: left;
-	background: #e34456;
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 	background-color: #fff;
@@ -201,13 +200,11 @@ header{
 #right-aside{
 	width: 210px;
 	float: right;
-	background: #e3e244;	
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 	background-color: #edeef0;
-
-    box-shadow: inset 2px 0px 0px 0px #838383;
-
+	border: 1px solid #c7cacf;
+	box-sizing: border-box;
 }
 #left-aside li:first-child, #right-aside li:first-child{
 	font-weight: bolder;

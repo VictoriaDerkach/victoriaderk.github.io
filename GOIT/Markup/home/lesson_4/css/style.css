@@ -25,22 +25,27 @@ header{
 .logo p{
 	font-size: 12px;
 	color: #128aa7;
-	margin: -70px 0 0 73px;
+	position: relative;
+	top: -70px;
+    left: 75px;
 }
 .contacts{
 	font-size: 12px;
 	color: #128aa7;
 	float: right;
-	margin: -110px 25px 0 0;
+	position: relative;
 	line-height: 20px;
+	top: -116px;
+    left: -26px;
 }
 .contacts p:first-child{
 	font-weight: bold;
 }
 .sprites{
 	float: right;
-	margin-top: -5px;
-	margin-right: 15px;
+	position: relative;
+	top: -6px;
+    left: 106px;
 }
 .sprites ul li{
 	height: 44px;
@@ -170,22 +175,23 @@ header{
 	width: 100%;
 	overflow: hidden;
 }
-#main p{
+#main li{
 	font-size: 14px;
 	line-height: 24px;
 	padding-left: 15px;
 	color: #424c43;
 }
 #left-aside{
-	width: 21%;
+	width: 210px;
 	float: left;
 	padding-bottom: 20000px;	
 	margin-bottom: -20000px;
 	background-color: #edeef0;
-	border: solid 1px #c7cacf;
+	box-shadow: inset -1px 0px 0px 0px #838383;
+
 }
 #section{
-	width: 58%;	
+	width: 580px;	
 	float: left;
 	background: #e34456;
 	padding-bottom: 20000px;
@@ -193,15 +199,17 @@ header{
 	background-color: #fff;
 }
 #right-aside{
-	width: 21%;
+	width: 210px;
 	float: right;
 	background: #e3e244;	
 	padding-bottom: 20000px;
 	margin-bottom: -20000px;
 	background-color: #edeef0;
-	border: solid 1px #c7cacf;
+
+    box-shadow: inset 2px 0px 0px 0px #838383;
+
 }
-#left-aside p:first-child, #right-aside p:first-child{
+#left-aside li:first-child, #right-aside li:first-child{
 	font-weight: bolder;
 	text-align: center;
 	padding: 5px;

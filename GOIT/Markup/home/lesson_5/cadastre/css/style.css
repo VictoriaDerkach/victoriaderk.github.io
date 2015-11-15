@@ -9,7 +9,10 @@
     font-style: normal;
 }
 body{
-	background: url(../img/background.png) no-repeat;
+	background: url(../img/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     font-family: 'helvetica_neueregular', 'Tahoma', sans-serif;
 }
@@ -66,7 +69,8 @@ nav ul li:last-child{
 	line-height: 36px;
     color: #fff;
 }
-.offers a:before {
+
+.offers a:before{
 	background: url("../img/flag.png") no-repeat;
     content: "";
     width: 23px;
@@ -78,7 +82,7 @@ nav ul li:last-child{
 	width: 560px;
 	height: 613px;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -129,14 +133,15 @@ nav ul li:last-child{
     margin-left: -50%;
     text-align: right;
 }
+form input[type="text"]:first-child{
+	margin-top: 30px;
+}
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"]{
 	width: 257px;
 	height: 37px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 17px;
+    margin: 10px;
     background-color: #000;
     border: none;
     border-bottom: 1px solid #494947;
@@ -144,25 +149,27 @@ input[type="password"] {
     color: white;
 	padding-left: 19px;
 }
-form .input:first-child{
-	margin-top: 31px;
-}
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="password"]:hover{
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
 	background-color: #1b5288;
 	border-bottom: 1px solid #689bcc;
     -webkit-box-shadow: inset 0px 0px 7px -2px rgba(10,10,10,0.3), 0px 0px 6px 3px #689bcc;
 	-moz-box-shadow: inset 0px 0px 7px -2px rgba(10,10,10,0.3), 0px 0px 6px 3px #689bcc;
 	box-shadow: inset 0px 0px 7px -2px rgba(10,10,10,0.3), 0px 0px 6px 3px #689bcc;
 }
-.reg-form-body p {
-	margin-top: 21px;
-	font-size: 14px;
-	color: #999999;
+input[type="checkbox"]{
+	margin: 0 8px 0 0;
+}
+.checkbox{
+	margin-top: 10px;
+    margin-left: 142px;
+    text-align: left;
+    font-size: 14px;
+	color: white;
 }
 .button{
-	margin-top: 23px;
+    margin-top: 20px;
     text-align: center;
 }
 .button input{
@@ -185,5 +192,6 @@ input[type="password"]:hover{
 }
 .reg-form-footer{
 	color: #999999;
-	margin-top: 21px;
+	margin-top: 20px;
+	font-size: 11px;
 }

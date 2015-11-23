@@ -1,0 +1,147 @@
+@media (max-width: 768px) {
+	.logo{
+		left: 20px;
+	}
+	header nav{
+		float: none;
+	}
+	header li{
+		display: inline-block;
+		margin: 20px 20px 0 20px;
+	}
+	.slider-box{
+		left: 10px;
+		width: 250px;
+		height: 185px;
+		overflow: hidden;
+		text-overflow: clip;
+	}
+	.slider-box .title{
+		font-size: 48px;
+		line-height: 36px;
+	}
+	.slider-box .quote{
+		font-size: 24px;
+		white-space: nowrap;
+		line-height: 36px;
+	}
+	.slider-box p{
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.play{
+		right: 70px;
+	}
+	.iphone{
+		right: 250px;
+	}
+	.iphone-mini{
+		float: none;
+		left: 430px;
+	}
+	.slider-arrow-left{
+		right: 0px;
+	}
+	.slider-arrow-right{
+		float: none;
+		position: relative;
+		left: 710px;
+		top: -90px
+	}
+	.info-box{
+		width: 150px;
+		height: 195px;
+		margin-right: 40px;
+	}
+	.info-box-text{
+		height: 145px;
+		width: 150px;
+		overflow: hidden;
+		text-overflow: clip;
+	}
+	.info-box p{
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 5px;
+	}
+	.info-box a{
+		margin-top: 5px;
+	}
+	.info-box:last-child{
+		float: none;
+	}
+	.info-box-tool{
+		margin-left: 20px;
+	}
+	.blog_slider{
+		width: 315px;
+		height: 270px;
+		left: 20px;
+	}
+	.blog_slider .title{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.blog_slider .title span{
+		display: block;
+		width: 100%;
+	}
+	.blog_slider_text{
+		height: 140px;
+		overflow: hidden;
+		text-overflow: clip;
+		margin-top: -10px;
+	}
+	.blog_photo{
+		margin-left: 20px;
+	}
+	.blog_slider:before{
+		display: none;
+	}
+	.blog_updates{
+		width: 320px;
+		height: 290px;
+		float: none;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
+		right: -70px;
+	}
+	.brands img{
+		float: left;
+		width: 700px;
+		left: 20px;
+	}
+	.article-footer-box{
+		width: 204px;
+		height: 202px;
+		overflow: hidden;
+		text-overflow: clip;
+	}
+	.article-footer-box:first-child{
+		margin-left: 20px;
+	}
+	.article-footer-box:last-child{
+		float: none;
+		margin-left: 40px;
+	}
+	footer nav{
+		margin-left: 20px;
+	}
+	footer li{
+		margin-right: 40px;
+	}
+	footer a{
+		font-size: 20px;
+	}
+	.copyright{
+		top: 70px;
+		float: none;
+	}
+}
+@media (max-width: 480px) {
+	
+}
+@media (max-width: 320px) {
+	
+}

@@ -61,9 +61,9 @@ header{
 }
 .header__nav{
 	display: block;
-	top: 70px;
+	top: 40px;
 	position: relative;
-	float: right;
+	left: 265px;
 }
 .nav__menu__item{
 	display: inline-block;
@@ -453,10 +453,10 @@ article .info{
 	padding: 5px;
 }
 .article-footer-box:first-child{
-	margin-right: 50px;
+	margin-right: 40px;
 }
 .article-footer-box:last-child{
-	left: 70px;
+	left: 50px;
 }
 footer{
 	height: 114px;

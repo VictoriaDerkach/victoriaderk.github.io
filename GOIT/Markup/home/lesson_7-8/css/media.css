@@ -76,7 +76,7 @@
 		margin-top: 5px;
 	}
 	.info-box:last-child{
-		float: none;
+		left: 10px
 	}
 	.info-box-tool{
 		margin-left: 20px;
@@ -110,13 +110,13 @@
 		left: -200px;
 	}
 	.blog_updates{
-		width: 320px;
+		width: 325px;
 		height: 290px;
 		float: none;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: clip;
-		right: 40px;
+		right: 45px;
 	}
 	.brands img{
 		margin-right: 10px;
@@ -132,8 +132,7 @@
 		margin-left: 20px;
 	}
 	.article-footer-box:last-child{
-		float: none;
-		margin-left: 40px;
+		left: 40px;
 	}
 	.footer__nav{
 		margin-left: 20px;

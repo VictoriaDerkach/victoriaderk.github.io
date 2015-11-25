@@ -218,7 +218,7 @@ article .info{
 	margin: 70px 0 0 15px;
 }
 .info-box:last-child{
-	float: right;
+	left: 60px;
 }
 .info-box:nth-child(2){
 	margin-right: 60px;
@@ -456,7 +456,7 @@ article .info{
 	margin-right: 50px;
 }
 .article-footer-box:last-child{
-	float: right;
+	left: 70px;
 }
 footer{
 	height: 114px;

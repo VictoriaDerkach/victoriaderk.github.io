@@ -2,10 +2,10 @@
 	.logo{
 		left: 20px;
 	}
-	header nav{
+	.header__nav{
 		float: none;
 	}
-	header li{
+	.nav__menu__item{
 		display: inline-block;
 		margin: 20px 20px 0 20px;
 	}
@@ -48,6 +48,11 @@
 		left: 710px;
 		top: -90px
 	}
+	.radio-button_slider{
+		float: none;
+		left: 520px;
+		top: 250px;
+	}
 	.info-box{
 		width: 150px;
 		height: 195px;
@@ -58,6 +63,9 @@
 		width: 150px;
 		overflow: hidden;
 		text-overflow: clip;
+	}
+	.info-box-massage{
+		left: 0px;
 	}
 	.info-box p{
 		font-size: 24px;
@@ -98,6 +106,9 @@
 	.blog_slider:before{
 		display: none;
 	}
+	.radio-button_blog_slider{
+		left: -200px;
+	}
 	.blog_updates{
 		width: 320px;
 		height: 290px;
@@ -105,12 +116,11 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: clip;
-		right: -70px;
+		right: 40px;
 	}
 	.brands img{
-		float: left;
-		width: 700px;
-		left: 20px;
+		margin-right: 10px;
+		left: -110px;
 	}
 	.article-footer-box{
 		width: 204px;
@@ -125,13 +135,13 @@
 		float: none;
 		margin-left: 40px;
 	}
-	footer nav{
+	.footer__nav{
 		margin-left: 20px;
 	}
-	footer li{
+	.footer__item{
 		margin-right: 40px;
 	}
-	footer a{
+	.footer__link{
 		font-size: 20px;
 	}
 	.copyright{
@@ -140,7 +150,12 @@
 	}
 }
 @media (max-width: 480px) {
-	
+	.header__nav{
+		display: none;
+	}
+	.drop_header_nav{
+		display: block;
+	}
 }
 @media (max-width: 320px) {
 	

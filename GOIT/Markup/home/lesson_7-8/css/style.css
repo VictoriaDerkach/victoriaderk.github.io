@@ -22,6 +22,7 @@
 }
 body{
 	background-color: #fff;
+	overflow-x: hidden;
 }
 .wrapper{
 	margin: 0 auto;
@@ -33,9 +34,6 @@ header{
 	background: url(../img/background.png) center top no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-}
-.drop_header_nav{
-	display: none;
 }
 .logo{
 	width: 152px;
@@ -79,17 +77,65 @@ header{
 .nav__menu__link:hover{
 	border-bottom: 2px solid #edbfff;
 }
+.header__nav__dropdown{
+		display: none;
+		margin: 100px 30px 0  0;
+	}
+.nav__menu__item__drop{
+	width: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+.nav__menu__dropdown{
+	position: absolute;
+	display: none;
+	height: 257px;
+	width: 246px;
+	background-color: rgba(63, 50, 71, 0.6);
+	background: rgba(63, 50, 71, 0.6);
+	color: rgba(63, 50, 71, 0.6);
+	list-style: none;
+	border-radius: 6px;
+	border: 1px solid #0f191f;
+	padding: 0 2px;
+	top: -9px;
+	left: -106px;
+}
+.nav__menu__link__dropdown{
+	display: inline-block;
+	width: 243px;
+	height: 34px;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'League Gothic', Tahoma, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	border-bottom: 1px solid #36283e;
+	border-top: 2px solid #523e5a;
+	padding-top: 6px;
+	width: 100%;
+}
+.nav__menu__link__dropdown:hover{
+	background: #2b2231;
+	border-bottom: 1px solid #edbfff;
+}
+.nav__menu__item__drop:hover .nav__menu__dropdown{
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
 .slider-arrow-left{
-	background: url(../img/arrow-left.png) no-repeat;
+	background: url(../img/arrow.png) no-repeat;
 	width: 22px;
 	height: 34px;
 	float: left;
 	position: relative;
 	right: 100px;
 	top: 180px;
+	transform: scale(-1, -1);
 }
 .slider-arrow-right{
-	background: url(../img/arrow-right.png) no-repeat;
+	background: url(../img/arrow.png) no-repeat;
 	width: 22px;
 	height: 34px;
 	float: right;
@@ -396,10 +442,9 @@ article .info{
    background:url('../img/item3.png') no-repeat no-repeat;
 }
 .brands{
-	height: 124px;
+	height: 125px;
 	background-color: #f9f9f9;
 	border-top: 1px solid #e6e6e6;
-	text-align: center;
 }
 .brands img{
 	position: relative;
@@ -494,150 +539,3 @@ footer{
 	font-family: 'Open Sans', Arial, serif; font-weight: 800;
 }
 
-/*@media (max-width: 768px) {
-	.logo{
-		left: 20px;
-	}
-	header nav{
-		float: none;
-	}
-	header li{
-		display: inline-block;
-		margin: 20px 20px 0 20px;
-	}
-	.slider-box{
-		left: 10px;
-		width: 250px;
-		height: 185px;
-		overflow: hidden;
-		text-overflow: clip;
-	}
-	.slider-box .title{
-		font-size: 48px;
-		line-height: 36px;
-	}
-	.slider-box .quote{
-		font-size: 24px;
-		white-space: nowrap;
-		line-height: 36px;
-	}
-	.slider-box p{
-		font-size: 16px;
-		line-height: 30px;
-	}
-	.play{
-		right: 70px;
-	}
-	.iphone{
-		right: 250px;
-	}
-	.iphone-mini{
-		float: none;
-		left: 430px;
-	}
-	.slider-arrow-left{
-		right: 0px;
-	}
-	.slider-arrow-right{
-		float: none;
-		position: relative;
-		left: 710px;
-		top: -90px
-	}
-	.info-box{
-		width: 150px;
-		height: 195px;
-		margin-right: 40px;
-	}
-	.info-box-text{
-		height: 145px;
-		width: 150px;
-		overflow: hidden;
-		text-overflow: clip;
-	}
-	.info-box p{
-		font-size: 24px;
-		line-height: 24px;
-		margin-bottom: 5px;
-	}
-	.info-box a{
-		margin-top: 5px;
-	}
-	.info-box:last-child{
-		float: none;
-	}
-	.info-box-tool{
-		margin-left: 20px;
-	}
-	.blog_slider{
-		width: 315px;
-		height: 270px;
-		left: 20px;
-	}
-	.blog_slider .title{
-		font-size: 24px;
-		line-height: 24px;
-	}
-	.blog_slider .title span{
-		display: block;
-		width: 100%;
-	}
-	.blog_slider_text{
-		height: 140px;
-		overflow: hidden;
-		text-overflow: clip;
-		margin-top: -10px;
-	}
-	.blog_photo{
-		margin-left: 20px;
-	}
-	.blog_slider:before{
-		display: none;
-	}
-	.blog_updates{
-		width: 320px;
-		height: 290px;
-		float: none;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: clip;
-		right: -70px;
-	}
-	.brands img{
-		float: left;
-		width: 700px;
-		left: 20px;
-	}
-	.article-footer-box{
-		width: 204px;
-		height: 202px;
-		overflow: hidden;
-		text-overflow: clip;
-	}
-	.article-footer-box:first-child{
-		margin-left: 20px;
-	}
-	.article-footer-box:last-child{
-		float: none;
-		margin-left: 40px;
-	}
-	footer nav{
-		margin-left: 20px;
-	}
-	footer li{
-		margin-right: 40px;
-	}
-	footer a{
-		font-size: 20px;
-	}
-	.copyright{
-		top: 70px;
-		float: none;
-	}
-}
-@media (max-width: 480px) {
-	
-}
-@media (max-width: 320px) {
-	
-}*/

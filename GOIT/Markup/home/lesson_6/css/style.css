@@ -169,10 +169,6 @@ nav div img{
 	color:#0d5a8f;
 	margin-right: 10px;
 }
-.left-aside{
-	height: 192px;
-	float: left;
-}
 .catalog{
 	width: 153px;
 	height: 20px;
@@ -202,7 +198,7 @@ nav div img{
     height: 20px;
     border-radius: 11px;
 }
-.title{
+h2{
 	font-size: 13px;
     width: 120px;
     height: 18px;
@@ -218,8 +214,9 @@ nav div img{
     padding-left: 30px;
     margin-bottom: 9px;
     margin-top: 5px;
+    
 }
-.title:before{
+h2:before{
 	display: inline-block;
     position: absolute;
     content: '';
@@ -230,24 +227,29 @@ nav div img{
     border: 6px solid #13466a;
     border-radius: 100%;
     box-sizing: border-box;
+    display: block;
 }
-.left-aside ul li{
+aside.left{
+	height: 192px;
+	float: left;
+}
+aside.left ul li{
     line-height: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding-left: 30px;
 }
-.left-aside ul li a{
+aside.left ul li a{
 	text-decoration: none;
 	color: #465961;
 	letter-spacing: 0.4px;
 }
-.left-aside ul li a:hover{
+aside.left ul li a:hover{
 	color: #0c3256;
 	text-decoration: underline;
 	font-weight: bold;
 }
-.left-aside ul li:before{
+aside.left ul li:before{
 	display: inline-block;
     content: '';
 	width: 6px;
@@ -257,7 +259,7 @@ nav div img{
     box-sizing: border-box;
     margin: 2px;
 }
-article{
+section{
 	margin: 10px 0 25px 12px;
 	padding-bottom: 20px;
 	border-radius: 5px;
@@ -289,7 +291,7 @@ figure a{
 figure a img{
 	margin-top: 5px;
 }
-figure span{
+figure h3{
 	font-size: 15px;
 	color: #206988;
 	font-weight: bolder;
@@ -306,9 +308,12 @@ figcaption{
 	font-family: 'Arial', sans-serif;
 	margin-top: 5px;
 }
-.right-aside{
+aside.right{
 	height: 183px;
 	float: right;
+}
+aside.right form{
+	margin-left: 15px;
 }
 .checkbox{
 	line-height: 25px;
@@ -337,9 +342,6 @@ figcaption{
 	background: -ms-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
 	background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256', GradientType=0 );
-}
-.right-aside form{
-	margin-left: 15px;
 }
 .brand-auto{
 	background: url(../img/brands.png) no-repeat;

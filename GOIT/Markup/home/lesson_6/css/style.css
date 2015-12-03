@@ -185,18 +185,7 @@ nav div img{
     padding-top: 6px;
     margin-top: 10px;
     margin-bottom: 13px;
-}
-.catalog:before{
-	background: url(../img/list.png) 50% 45% no-repeat, linear-gradient(to bottom, #1f6786 1%,#0c3357 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6786', endColorstr='#0c3357',GradientType=0 );;
-	content: "";
-	display: inline-block;
-    position: absolute;
-    top: 2px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    border-radius: 11px;
+    background: url(../img/item.png) no-repeat 3px 3px;
 }
 h2{
 	font-size: 13px;
@@ -230,7 +219,6 @@ h2:before{
     display: block;
 }
 aside.left{
-	height: 192px;
 	float: left;
 }
 aside.left ul li{
@@ -259,7 +247,7 @@ aside.left ul li:before{
     box-sizing: border-box;
     margin: 2px;
 }
-section{
+.content{
 	margin: 10px 0 25px 12px;
 	padding-bottom: 20px;
 	border-radius: 5px;
@@ -280,7 +268,7 @@ figure{
 	text-align: center;
 	margin-top: 25px;
 }
-figure a{
+figure .img{
 	width: 137px;
 	height: 128px;
 	background-color: #fff;
@@ -288,7 +276,7 @@ figure a{
 	border-radius: 10px;
 	display: block;
 }
-figure a img{
+figure img{
 	margin-top: 5px;
 }
 figure h3{
@@ -309,7 +297,6 @@ figcaption{
 	margin-top: 5px;
 }
 aside.right{
-	height: 183px;
 	float: right;
 }
 aside.right form{

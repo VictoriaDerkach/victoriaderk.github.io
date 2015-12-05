@@ -1,32 +1,36 @@
-@media (max-width: 768px){
+
+@media (max-width: 960px){
 	body{
-		max-width: 768px;
 		overflow-x: hidden;
 	}
-	header{
-		max-width: 768px;
-	}
 	.wrapper{
-		max-width: 768px;
+		width: 768px;
+		height: 0px;
 	}
-	.logo{
-		left: 20px;
+	header{
+		height: 800px;
 	}
 	.header__nav{
-		float: none;
-		left: 0px;
-		top: 100px;
+		float: left;
+    	position: relative;
+    	margin-top: 14%;
+    	width: 80%;
 	}
 	.nav__menu__item{
-		display: inline-block;
-		margin: 20px 20px 0 20px;
+		margin-left: 3%;
+	}
+	.slider{
+		top: 40%;
+		position: absolute;
 	}
 	.slider-box{
-		left: 10px;
-		width: 250px;
+		width: 35%;
 		height: 185px;
 		overflow: hidden;
 		text-overflow: clip;
+		position: relative;
+    	top: 100px;
+    	left: 8%;
 	}
 	.slider-box .title{
 		font-size: 48px;
@@ -41,148 +45,88 @@
 		font-size: 16px;
 		line-height: 30px;
 	}
-	.play{
-		right: 70px;
-	}
 	.iphone{
-		right: 250px;
+		top: 25px;
+		right: 8%;
 	}
 	.iphone-mini{
-		float: none;
-		left: 430px;
-	}
-	.slider-arrow-left{
-		right: 0px;
-	}
-	.slider-arrow-right{
-		float: none;
-		position: relative;
-		left: 710px;
-		top: -90px
+		top: 105px;
+    	position: relative;
+    	left: -18px;
 	}
 	.radio-button_slider{
-		float: none;
-		left: 520px;
-		top: 250px;
-	}
-	.info-box{
-		width: 150px;
-		height: 195px;
-		margin-right: 40px;
+		left: 60%;
+ 		top: 120%;
+    	position: absolute;
 	}
 	.info-box-text{
-		height: 145px;
-		width: 150px;
+		height: 180px;
 		overflow: hidden;
 		text-overflow: clip;
-	}
-	.info-box-massage{
-		left: 0px;
-	}
-	.info-box p{
-		font-size: 24px;
-		line-height: 24px;
-		margin-bottom: 5px;
-	}
-	.info-box a{
-		margin-top: 5px;
-	}
-	.info-box:last-child{
-		left: 10px
-	}
-	.info-box-tool{
-		margin-left: 20px;
-	}
-	.blog_slider{
-		width: 315px;
-		height: 270px;
-		left: 20px;
-	}
-	.blog_slider .title{
-		font-size: 24px;
-		line-height: 24px;
-	}
-	.blog_slider .title span{
-		display: block;
-		width: 100%;
 	}
 	.blog_slider_text{
 		height: 140px;
 		overflow: hidden;
 		text-overflow: clip;
-		margin-top: -10px;
-	}
-	.blog_photo{
-		margin-left: 20px;
-	}
-	.blog_slider:before{
-		display: none;
-	}
-	.radio-button_blog_slider{
-		left: -200px;
 	}
 	.blog_updates{
-		width: 325px;
+		width: 322px;
 		height: 290px;
-		float: none;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: clip;
-		right: 45px;
+		float: none;
+		left: 5%;
 	}
 	.brands img{
-		margin-right: 10px;
-		left: 0px;
+		margin-left: 6%;
 	}
 	.article-footer-box{
-		width: 204px;
+		width: 220px;
 		height: 202px;
 		overflow: hidden;
 		text-overflow: clip;
-	}
-	.article-footer-box:first-child{
-		margin-left: 20px;
-	}
-	.article-footer-box:last-child{
-		left: 40px;
-	}
-	.footer__nav{
-		margin-left: 20px;
-	}
-	.footer__item{
-		margin-right: 40px;
-	}
-	.footer__link{
-		font-size: 20px;
+		position: relative;
+		left: 5%;
 	}
 	.copyright{
-		top: 70px;
-		float: none;
+		top: 63px;
+    	right: 6%;	
 	}
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
 	body{
-		max-width: 480px;
 		overflow-x: hidden;
 	}
+	.wrapper{
+		width: 480px;
+	}
 	header{
-		max-width: 480px;
 		height: 550px;
 	}
-	.wrapper{
-		max-width: 480px;
-	}
 	.logo{
-		left: 150px;
+		float: none;
+		text-align: center;
 	}
 	.header__nav{
 		display: none;
 	}
 	.header__nav__dropdown{
 		display: block;
+		position: relative;
+		top: 95px;
 	}
 	.nav__menu__link{
 	border-bottom: 2px solid #edbfff;
+	}
+	.slider{
+		height: 245px;
+		top: 30%;
+		position: absolute;
+	}
+	.slider-box{
+		width: 50%;
+		left: 0;
 	}
 	.slider-box p:nth-child(3){
 		display: none;
@@ -194,138 +138,102 @@
 		font-size: 18px;
 	}
 	.iphone{
-		background-size: 70%;
-		right: 0px;
-		top: -5px;
+		background-size: 68%;
+		top: -9px;
+    	right: 0;
+    	left: 65px;
 	}
-	 .iphone-mini{
+	.iphone-mini{
 		background-size: 70%;
-		left: 230px;
-		top: 40px;
-		float: none;
+    	left: 295px;
+    	top: 50px;
+    	float: none;
+    	width: 28%;
 	}
 	.play{
-		background-size: 70%;
-		left: -80px;
-		top: 110px;
-	}
-	.slider{
-		z-index: 0;
-		height: 250px;
-		top: 40px;
+		background-size: 68%;
+		top: 105px;
+		right: 40%;
 	}
 	.slider-arrow-left{
-		top: 100px;
+		top: 40%;
 	}
 	.slider-arrow-right{
-		top: -168px;
-		left: 425px;
+		top: 40%;
 	}
 	.radio-button_slider{
-		top: 70px;
-		left: 200px;
+		top: 73%;
+    	left: 45%;
 	}
 	article .info{
 		height: 600px;
 	}
 	.info-box{
-		width: 380px;
-		height: 140px;
-		margin: 0;
+		width: 80%;
+    	height: 140px;
+    	top: 13px;
 	}
-	.info-box-text:first-child{
-		top: 40px;
-		left: 40px;
-	}
-	.info-box-text{
-		width: 400px;
-		height: 100px;
-		text-overflow: clip;
-		position: relative;
-		left: 220px;
-	}
-	.info-box-massage{
-		left: -380px;
-		bottom: 20px;
-	}
-	.info-box-tool{
-		right: 15px;
-		top: 110px;
-	}
-	.info-box-note{
-		right: 440px;
-		top: 260px;
+	.info-box a{
+		bottom: 70px;
+    	position: relative;
 	}
 	.info-box p{
 		font-size: 24px;
 		line-height: 24px;
-		margin-bottom: 5px;
 	}
-	.info-box a{
-		left: 320px;
-		top: 40px;
-		position: relative;
-	}
-	.info-box:last-child{
-		left: 5px
+	.info-box:first-child:before, 
+	.info-box:nth-child(2):before, 
+	.info-box:last-child:before{
+		left: -10%;
+		top: 10px;
 	}
 	.blog{
 		height: 785px;
 	}
 	.blog_slider{
-		height: 273px;
+		height: 292px;
 		width: 390px;
-		top: 25px;
+		top: 20px;
 	}
-	.blog_slider p{
-		margin: 0px 25px;
-	}
-	.blog_slider .title{
-		font-size: 30px;
-		line-height: 23px;
+	.blog_slider_text{
+		height: 100%;
+		width: 378px;
 	}
 	.radio-button_blog_slider{
 		top: 40px;
 		left: 200px;
 	}
 	.blog_updates{
-		float: none;
-		display: inherit;
-		white-space: normal;
-		overflow: inherit;
-		top: 100px;
-		left: 45px;
+    	top: 60px;
+    	left: -75px;
+	}
+	.blog_updates_item{
+		padding-bottom: 15px;
 	}
 	article{
 		height: 2290px;
 	}
 	.brands{
-		width: 480px;
 		height: 235px;
 	}
 	.brands img{
 		float: none;
-		margin-right: 40px;
-		margin-bottom: 20px;
+		margin-left: 15%;
+    	margin-bottom: 7%;
 	}
 	.article-footer{
 		height: 670px;
-		}
+	}
 	.article-footer-box{
-		width: 440px;
+		width: 90%;
 		height: 200px;
-		margin-left: 20px;
-		top: 60px;
-	}
-	.article-footer-box:first-child{
-		top: 60px;
-	}
-	.article-footer-box:last-child{
-		margin-left: -15px;
 		top: 50px;
 	}
+	.article-footer-box:first-child{
+		margin-bottom: 20px;
+	}
 	.footer__item{
-		margin-right: 10px;
+		margin-right: 3%;
 	}
 	.copyright{
 		float: left;
@@ -335,7 +243,7 @@
 		height: 200px; 
 	}
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 	body{
 		max-width: 320px;
 		overflow-x: hidden;

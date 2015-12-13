@@ -1,7 +1,7 @@
-var x = prompt('Add base',"2");
-var n = prompt('Add exponent',"2");
+var x = prompt('Add base');
+var n = prompt('Add exponent');
 
-console.log(pow(x,n));
+console.log( pow(x,n) );
 
 function pow(x, n) {
 	var i = 0;
@@ -12,9 +12,8 @@ function pow(x, n) {
 		return 'error';
 	}
 
-	while (i < n) {
+	for (var i = 0; i < n; i++) {
 		result = result * x;
-		i++;
 	}
 
 	return result;

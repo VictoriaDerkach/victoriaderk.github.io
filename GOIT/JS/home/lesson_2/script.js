@@ -4,16 +4,13 @@ for (var i = 0; i < 5; i++) {
 	arrNames[i] = prompt('Enter name');
 }
 
-var userName = "";
-
-while (userName == "" || userName == null) {
-	userName = prompt('Enter your name');
-}
+var userName = prompt('Enter your name');
 
 var nameFounded = false;
 
-for (var i = 0; i < 5; i++) {
-	if (userName == arrNames[i]) {
+for (var i = 0; i < arrNames.length; i++) {
+
+	if (userName == arrNames[i] && userName != "" && userName != null) {
 		nameFounded = true;
 	} 
 }

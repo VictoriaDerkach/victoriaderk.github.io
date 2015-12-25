@@ -1,27 +1,56 @@
 var application = {
 	indexQuestion: 1,
-	createElement: function(tagName, className, content, parent) {
-		var element = document.createElement(tagName);
-		element.innerHTML = content;
-		element.className = className;
-		if (tagName == "input") {
+	createElement: function(obj) {
+		var element = document.createElement(obj.tagName);
+		if (obj.content !== undefined) {
+			element.innerHTML = obj.content;
+		}
+		if (obj.className !== undefined) {
+			element.className = obj.className;
+		}
+		if (obj.tagName == "input") {
 			element.setAttribute("type", "checkbox");
-		} else if (tagName == "button") {
+		} else if (obj.tagName == "button") {
 			element.setAttribute("type", "submit");
 		}
-		parent.appendChild(element);
+		obj.parent.appendChild(element);
 		return element;
 	},
 	createQuestion: function(parent, countAnswers) {
 
-		var div = this.createElement("div", "col-md-3", "", parent);
-		this.createElement("h3", "", "Вопрос #" + this.indexQuestion++, div);
-		var ul = this.createElement("ul", "", "", div);
+		var div = this.createElement({
+			tagName: "div", 
+			className: "col-md-3",
+			parent: parent
+		});
+
+		this.createElement({
+			tagName: "h3",
+			content: "Вопрос #" + this.indexQuestion++, 
+			parent: div
+		});
+
+		var ul = this.createElement({
+			tagName: "ul",
+			parent: div
+		});
 
 		for (var i = 1; i <= countAnswers; i++) {
-			var li = this.createElement("li", "list-group-item", "", ul);
-			var label = this.createElement("label", "", "Вариант ответа #" + i, li);
-			this.createElement("input", "pull-left", "", label);
+			var li = this.createElement({
+				tagName: "li", 
+				className: "list-group-item",
+				parent: ul
+			});
+			var label = this.createElement({
+				tagName: "label",
+				content: "Вариант ответа #" + i,
+				parent: li
+			});
+			this.createElement({
+				tagName: "input", 
+				className: "pull-left",
+				parent: label
+			});
 		};
 	},
 	createQuestions: function(parent, countQuestions, countAnswers) {
@@ -31,34 +60,26 @@ var application = {
 	}
 }
 
-var body = document.querySelector("body");
+var body = document.body;
 
-application.createElement("h1", "text-center", "Тест по программированию", body);
-var div = application.createElement("div", "col-md-12", "", body);
+application.createElement({
+	tagName: "h1",
+	className: "text-center",
+	content: "Тест по программированию",
+	parent: body
+});
+
+var div = application.createElement({
+	tagName: "div",
+	className: "col-md-12",
+	parent: body
+});
 
 application.createQuestions(div, 4, 5);
 
-application.createElement("button", "btn btn-default btn-lg btn-block", "Отправить ответы", body);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var ul2 = application.createElement("ul", "", "Вопрос 2", body);
-// application.createElement("li", "", "Вариант ответа №1", ul2);
-// application.createElement("li", "", "Вариант ответа №2", ul2);
-// application.createElement("li", "", "Вариант ответа №3", ul2);
-
-// var ul3 = application.createElement("ul", "", "Вопрос 3", body);
-// application.createElement("li", "", "Вариант ответа №1", ul3);
-// application.createElement("li", "", "Вариант ответа №2", ul3);
-// application.createElement("li", "", "Вариант ответа №3", ul3);
+application.createElement({
+	tagName: "button",
+	className: "btn btn-default btn-lg btn-block",
+	content: "Отправить ответы",
+	parent: body
+});

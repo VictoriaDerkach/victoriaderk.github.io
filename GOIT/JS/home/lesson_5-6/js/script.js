@@ -9,39 +9,47 @@ function Timer() {
 	
 	self._timer = function() {
 
-		secs++;
+		msecs += 4;
+		msec.innerHTML = msecs;
+
+		if (msecs > 999) {
+			msecs = 0;
+			secs++;
+			sec.innerHTML = (secs.toString().length == 1) ? '0' + secs : secs;
+		}
 
 		if (secs > 59) {
 			secs = 0;
-			mins = mins + 1;
-		};
+			mins++;
+			min.innerHTML = (mins.toString().length == 1) ? '0' + mins : mins;
+		}
 
 		if (mins > 59) {
 			mins = 0;
-			hours = hours + 1;
+			hours++;
+			hour.innerHTML = (hours.toString().length == 1) ? '0' + hours : hours;
 		}
-
-		sec.innerHTML = (secs.toString().length == 1) ? '0' + secs : secs;
-		min.innerHTML = (mins.toString().length == 1) ? '0' + mins : mins;
-		hour.innerHTML = (hours.toString().length == 1) ? '0' + hours : hours;
 	}
 	self.startTimer = function() {
 		if (interval == null) {
-			interval = setInterval(self._timer, 1000);
-		};
+			interval = setInterval(self._timer, 100);
+		}
 	}
 	self.pauseTimer = function () {
 		clearInterval(interval);
 		interval = null;
 	}
 	self.resetTimer = function() {
+		self.pauseTimer();
 		hour.innerHTML = '00';
 		min.innerHTML = '00';
 		sec.innerHTML = '00';
+		msec.innerHTML = '000'
 
 		secs = 0;
 		mins = 0;
 		hours = 0;
+		msecs = 0;
 	}
 }
 

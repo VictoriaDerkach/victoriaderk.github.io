@@ -32,7 +32,7 @@ function Timer() {
 	}
 	self.startTimer = function() {
 		if (interval == null) {
-			interval = setInterval(self._timer, 100);
+			interval = setInterval(self._timer, 1);
 		}
 	}
 	self.pauseTimer = function () {

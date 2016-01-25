@@ -5,20 +5,26 @@ $('ul li').click(function() {
 	$('#' + $(this).attr('data-id')).removeClass('hidden');
 });
 
-
 $('input').mouseenter(function(e){
-	var pos = $(this).position();
-	$('[data-id='+$(this).attr('id')+']')
-	.css({
-		 "top" : pos.top + 35,
-         "left" : pos.left
-	})
-	.fadeIn("fast");
+	showTip($(this));
 })
 .mouseleave(function(){
 	$('[data-id='+$(this).attr('id')+']').fadeOut("fast");
 });
 
-$('#btn_tips').click(function(){
-	$('.tips').fadeIn("fast");
+$('#btn_tips').click(function(e){
+	e.preventDefault();
+	$('input.form-control').each(function(){
+		showTip($(this));
+	});
 });
+
+function showTip(elem){
+	var pos = elem.position();
+	$('[data-id='+elem.attr('id')+']')
+	.css({
+		 "top" : pos.top + 35,
+         "left" : pos.left
+	})
+	.fadeIn("fast");
+}

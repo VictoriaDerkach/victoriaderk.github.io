@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS HW 9-10</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+	<ul class="menu">
+			<li>
+				<a href="">Spain</a>
+				<ul class="submenu">
+					<li><a href="">some submenu text</a></li>
+					<li>
+						<a href="">SUBMENU</a>
+						<ul class="submenu">
+							<li><a href="">text</a></li>
+							<li><a href="">text</a></li>
+							<li><a href="">text</a></li>
+							<li>
+								<a href="">SUBMENU</a>
+								<ul class="submenu">
+									<li><a href="">some text</a></li>
+									<li><a href="">some text</a></li>
+									<li><a href="">some text</a></li>
+									<li><a href="">some text</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">some submenu text</a></li>
+					<li><a href="">some submenu text</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Canada</a>
+				<ul class="submenu">
+					<li><a href="">some submenu text</a></li>
+					<li><a href="">some submenu text</a></li>
+					<li><a href="">some submenu text</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">France</a>
+			</li>
+			<li>
+				<a href="">Britain</a>
+				<ul class="submenu">
+					<li><a href="">some submenu text</a></li>
+					<li><a href="">some submenu text</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Italy</a>
+			</li>
+		</ul>
+		<div class="logo">Countries</div>
+		<div class="carousel">
+			<ul>
+				<li class="active">
+					<img src="img/1.jpg" alt="">
+				</li>
+				<li class="not-active">
+					<img src="img/2.jpg" alt="">
+				</li>
+				<li class="not-active">
+					<img src="img/3.jpg" alt="">
+				</li>
+				<li class="not-active">
+					<img src="img/5.jpg" alt="">
+				</li>
+			</ul>
+			<a class="arrow-prev" href="#">‹</a>
+			<a class="arrow-next" href="#">›</a>
+		</div>
+		<select name="country_id" id="country_id" tabindex="1">
+			<option value="">-- Select country --</option>
+			<optgroup label="North America">
+				<option value="1">USA</option>
+				<option value="9">Canada</option>
+			</optgroup>
+			<optgroup label="Europe">
+				<option value="2">France</option>
+				<option value="3">Spain</option>
+				<option value="6">Bulgaria</option>
+				<option value="7" disabled="disabled">Greece</option>
+				<option value="8">Italy</option>
+			</optgroup>
+			<optgroup label="Asia" disabled="disabled">
+				<option value="5">Japan</option>
+				<option value="11">China</option>
+			</optgroup>
+			<option value="4">Brazil</option>
+			<option value="10">South Africa</option>
+		</select>
+		<div class="checkbox_js">
+			<p>Choose picture size:</p>
+			<div>
+				<label for="ch1"></label>
+				<span class="niceCheck"><input type="checkbox" id="ch1" value="1" tabindex="1"/></span>
+				<span>1200x800</span>
+			</div>
+			<div>
+				<label for="ch2"></label>
+				<span class="niceCheck"><input type="checkbox" checked id="ch2" value="2" tabindex="2"/></span>
+				<span>800x400</span>
+			</div>
+			<div>
+				<label for="ch3"></label>
+				<span class="niceCheck"><input type="checkbox" id="ch3" value="3" tabindex="3"/></span>
+				<span>400x400</span>
+			</div>
+		</div>
+		<div class="checkbox_css">
+			<p>Select the device</p>
+			<div>
+				<input type="checkbox" id="c1" name="cc"/>
+				<label for="c1"><span></span>Phone</label>
+			</div>
+			<div>
+				<input type="checkbox" id="c2" name="cc"/>
+				<label for="c2"><span></span>Tablet</label>
+			</div>
+			<div>
+				<input type="checkbox" id="c3" name="cc"/>
+				<label for="c3"><span></span>Notebook</label>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+	background: url(../img/background2.jpg) no-repeat center top;
+}
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	height: 600px;
+	font-family: 'Pacifico', cursive;
+}
+.logo{ 
+	text-align: center;
+	font-size: 70px;
+	padding: 100px 0 50px 0;
+}
+.menu{
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 100;
+} 
+.menu li{
+    float: left;
+    width: 192px;
+    text-align: center;
+    background: black;
+    padding: 10px 10px 10px 0;
+}
+.menu a{
+	text-decoration: none;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+}
+.submenu{
+	display: none;
+}
+.submenu li{
+	float: none;
+	display: block;
+}
+.carousel{
+	margin: 0 auto;
+    margin-bottom: 20px;
+	width: 700px;
+	position: relative;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+.carousel li img{
+	width: 700px;
+	height: 400px;
+}
+.arrow-prev, .arrow-next{	
+	position: absolute;
+    top: 50%;
+    right: 720px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #F0EFE7;
+    -moz-box-shadow: 0 0 4px #F0EFE7;
+    box-shadow: 0 0 4px #F0EFE7;
+}
+.arrow-next{
+    right: -50px;
+}
+.active{
+}
+.not-active{
+	display: none;
+}
+.niceCheck{
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox-sprite3.png);
+}
+.niceCheck input{
+	display: none;
+}
+.checkbox_js span{
+    line-height: 30px;
+}
+.checkbox_js{
+	float: right;
+	font-size: 20px;
+}
+.checkbox_css{
+    float: left;
+}
+.checkbox_css input[type="checkbox"]{
+    display:none;
+}
+.checkbox_css input[type="checkbox"] + label span{
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+.checkbox_css input[type="checkbox"] {
+    display:none;
+}
+.checkbox_css input[type="checkbox"] + label span{
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+.checkbox_css input[type="checkbox"]:checked + label span {
+    background:url(../img/check_radio_sheet.png) -19px top no-repeat;
+}
+.sbHolder{
+    margin: 0 auto;
+}

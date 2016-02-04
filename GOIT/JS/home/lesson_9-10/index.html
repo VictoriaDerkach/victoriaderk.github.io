@@ -6,11 +6,14 @@
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/jquery.selectbox.css">
+	<link rel="stylesheet" href="css/jcarousel.css">
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	
 	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/jcarousel.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -63,7 +66,19 @@
 			</li>
 		</ul>
 		<div class="logo">Countries</div>
-		<div class="carousel">
+		<div class="jcarousel-wrapper">
+			<div class="jcarousel">
+			    <ul>
+			        <li><img src="img/1.jpg" width="600" height="400" alt=""></li>
+			        <li><img src="img/2.jpg" width="600" height="400" alt=""></li>
+			        <li><img src="img/3.jpg" width="600" height="400" alt=""></li>
+			        <li><img src="img/5.jpg" width="600" height="400" alt=""></li>
+			    </ul>
+			</div>
+			<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>  <p class="jcarousel-pagination"></p>
+		</div>
+		<!--div class="carousel">
 			<ul>
 				<li class="active">
 					<img src="img/1.jpg" alt="">
@@ -80,7 +95,7 @@
 			</ul>
 			<a class="arrow-prev" href="#">‹</a>
 			<a class="arrow-next" href="#">›</a>
-		</div>
+		</div-->
 		<select name="country_id" id="country_id" tabindex="1">
 			<option value="">-- Select country --</option>
 			<optgroup label="North America">
@@ -106,17 +121,17 @@
 			<div>
 				<label for="ch1"></label>
 				<span class="niceCheck"><input type="checkbox" id="ch1" value="1" tabindex="1"/></span>
-				<span>1200x800</span>
+				<span class="niceCheckTitle">1200x800</span>
 			</div>
 			<div>
 				<label for="ch2"></label>
 				<span class="niceCheck"><input type="checkbox" checked id="ch2" value="2" tabindex="2"/></span>
-				<span>800x400</span>
+				<span class="niceCheckTitle">800x400</span>
 			</div>
 			<div>
 				<label for="ch3"></label>
 				<span class="niceCheck"><input type="checkbox" id="ch3" value="3" tabindex="3"/></span>
-				<span>400x400</span>
+				<span class="niceCheckTitle">400x400</span>
 			</div>
 		</div>
 		<div class="checkbox_css">

@@ -9,6 +9,7 @@ $(function () {
 		 	.slideUp(100);
 		}
 	);
+	/*
 	$('.arrow-prev').click(function(e){
 		e.preventDefault();
 		var prev = $('li.active').prev();
@@ -24,14 +25,18 @@ $(function () {
 			$('li.active').removeClass('active').addClass('not-active');
 			next.addClass('active').removeClass('not-active');
 		}
-		
 	});
+	*/
+
 	$("#country_id").selectbox();
 
 
 
 	$(".niceCheck").mousedown(function(){
     	changeCheck($(this));
+	});
+	$(".niceCheckTitle").mousedown(function(){
+		changeCheck($(this).parent().find('.niceCheck').eq(0));
 	});
 	$(".niceCheck").each(function(){
     	changeCheckStart($(this));

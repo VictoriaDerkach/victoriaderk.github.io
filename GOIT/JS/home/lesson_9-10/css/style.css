@@ -1,5 +1,6 @@
 body{
 	background: url(../img/background2.jpg) no-repeat center top;
+    overflow-x:hidden;
 }
 .wrapper{
 	width: 960px;

@@ -43,9 +43,9 @@
 		<div id="content">
 			<p><%= data.titleReason %></p>
 			<ul>
-				<li>constant development</li>
-				<li>front-end developers are in demand</li>
-				<li>making things pretty</li>
+				<% for (var i = 0; i < data.reasons.length; i++) { %>
+					<li><%= data.reasons[i] %></li>
+				<% } %>
 			</ul>
 		</div>
 		<div id="contact">

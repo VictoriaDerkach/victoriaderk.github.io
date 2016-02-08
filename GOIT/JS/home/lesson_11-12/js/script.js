@@ -8,7 +8,11 @@ $(function(){
 		image: 'img/foto.JPG',
 		about: 'Teacher of mathematics and informatics, electronics engineer',
 		titleReason: 'I want to learn frontend for several reasons:',
-		reasons: {},
+		reasons: [
+			'constant development',
+			'front-end developers are in demand',
+			'making things pretty'
+		],
 		titlePhone: 'My telephone number',
 		phone: '+380939182262',
 		titleFacebook: 'Me on facebook',

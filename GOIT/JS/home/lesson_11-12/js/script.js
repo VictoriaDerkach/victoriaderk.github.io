@@ -5,7 +5,7 @@ $(function(){
 
 	var profile = {
 		name: 'Derkach Victoria',
-		image: 'img/foto.jpg',
+		image: 'img/foto.JPG',
 		about: 'Teacher of mathematics and informatics, electronics engineer',
 		titleReason: 'I want to learn frontend for several reasons:',
 		reasons: {},

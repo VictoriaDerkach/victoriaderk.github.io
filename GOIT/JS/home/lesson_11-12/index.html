@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 11-12</title>
+	<link rel="stylesheet" href="css/jquery.carousel.css">
+	<link rel="stylesheet" href="css/template.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.carousel.js"></script>
+	<script src="js/ejohn.js"></script>
+</head>
+<body>
+	<div class="carousel">
+		<div class="carousel-arrow-left"><span>Влево</span></div>
+		<div class="carousel-hider">
+			<ul class="carousel-list">
+				<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 1</p></li>
+				<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 2</p></li>
+				<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 3</p></li>
+				<li class="carousel-element"><img src="img/image4.jpg"><p>Описание 4</p></li>
+				<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 5</p></li>
+				<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 6</p></li>
+				<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 7</p></li>
+				<li class="carousel-element"><img src="img/image4.jpg"><p>Описание 8</p></li>
+				<li class="carousel-element"><img src="img/image1.jpg"><p>Описание 9</p></li>
+				<li class="carousel-element"><img src="img/image2.jpg"><p>Описание 10</p></li>
+				<li class="carousel-element"><img src="img/image3.jpg"><p>Описание 11</p></li>
+				<li class="carousel-element"><img src="img/image4.jpg"><p>Описание 12</p></li>
+			</ul>
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+		<div style="clear: both;"></div>
+	</div>
+
+	<script type="text/html" id="item_tmpl">
+		<div class="wrapper">
+		<div id="header">
+			<h2><%= data.name %></h2>
+			<img src="<%= data.image %>" title="<%= data.name %>">
+			<p><%= data.about %></p>
+		</div>
+		<div id="content">
+			<p><%= data.titleReason %></p>
+			<ul>
+				<li>constant development</li>
+				<li>front-end developers are in demand</li>
+				<li>making things pretty</li>
+			</ul>
+		</div>
+		<div id="contact">
+			<p><%= data.titlePhone %></p>
+			<p class="margin-bottom"><%= data.phone %></p>
+			<p><%= data.titleFacebook %></p>
+			<p><a href="<%= data.urlFacebook %>" target="_blank"><%= data.name %></a></p>
+		</div>
+		<div id="footer">
+			<p><%= data.titleFeedback %></p>
+			<p><%= data.feedback %></p>
+		</div>
+	</div>
+	</script>
+
+
+</body>
+</html>

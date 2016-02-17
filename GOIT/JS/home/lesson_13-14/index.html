@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 13-14</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<script type="text/template" id="question_template">
+	<div class="col-md-4">
+		<h3><%= question.question %></h3>
+		<ul>
+			<% for ( var i = 0; i < question.answers.length; i++ ) { %>
+				<li class="list-group-item">
+					<label><input class="pull-left" type="checkbox" id="<%= question.answers[i].id %>">
+					<%= question.answers[i].answer %></label>
+				</li>
+	  		<% } %>
+		</ul>
+	</div>
+</script>
+
+<script type="text/template" id="modal_window">
+	<div class="test-passed-overlay" id="modal-window">
+
+		<div class="test-passed-modal">
+			<span id="modal-window-close" class="close">X</span>
+			<h3>Результаты</h3>
+			<% for ( var i = 0; i < questions.length; i++ ) { %>
+				<p>
+					<strong>Вопрос №<%= questions[i].id %></strong> <%= questions[i].result %>
+				</p>
+	  		<% } %>
+	  		<button id="modal-window-restart">Restart</button>
+		</div>
+
+	</div>
+</script>
+
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

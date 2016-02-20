@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 15-16</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="form">
+	<p>MyGoogle</p>
+	<form id="search">
+		<input type="text" id="inputSearch" value="" placeholder="Enter your search text..." />
+		<input type="submit" id="btnSearch" value="" />
+	</form>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/lodash.js"></script>
+<script src="js/script.js"></script>
+<script src="js/oop.js"></script>
+
+<script type="text/template" id="resultTemplate">
+	<div id="results">
+		<div class="results"></div>
+		<% lists.forEach(function(list){ %>
+		<div class="div-group">
+			<div>
+				<h3><a href="<%= list.url %>" target="_blank"><%- list.titleNoFormatting %></a></h3>
+			</div>
+			<div>
+				<div><%- list.cacheUrl %> </div>
+				<span><%= list.content %></span>
+			</div>
+		</div>
+		<% }); %>
+		<div class="div-group">
+			<table>
+				<tbody>
+				<% pages.forEach(function(page){ %>
+					<td>
+						<% if (page.label != (activePage + 1)) { %>
+							<a class="page-link" href="<%- page.start %>"><%= page.label %></a>
+						<% } else { %>
+							<span class="page-link active"><%= page.label %></span>
+						<% } %>
+					</td>
+				<% }); %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+</script>
+
+</body>
+</html>

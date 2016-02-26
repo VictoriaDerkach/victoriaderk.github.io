@@ -1,0 +1,32 @@
+<script type="text/template" id="resultTemplate">
+	<div id="results">
+		<div class="results"></div>
+		<% lists.forEach(function(list){ %>
+		<div class="div-group">
+			<div>
+				<h3><a href="<%= list.url %>" target="_blank"><%- list.titleNoFormatting %></a></h3>
+			</div>
+			<div>
+				<div><%- list.cacheUrl %> </div>
+				<span><%= list.content %></span>
+			</div>
+		</div>
+		<% }); %>
+		<div class="div-group">
+			<table>
+				<tbody>
+				<% pages.forEach(function(page){ %>
+					<td>
+						<% if (page.label != (activePage + 1)) { %>
+							<a class="page-link" href="<%- page.start %>"><%= page.label %></a>
+						<% } else { %>
+							<span class="page-link active"><%= page.label %></span>
+						<% } %>
+					</td>
+				<% }); %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+</script>

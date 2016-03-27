@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW 23-24</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+	<script data-main="./js/main" src="./js/require.js"></script>
+</head>
+<body>
+	
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			<h1>Tasks For Today</h1>
+			<ul class="item-list"></ul>
+			<div class="controlls">
+				<input type="text" class="item-value">
+				<button class="item-add">Add</button>
+			</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="list-template">
+		<% for (var i = 0; i < data.length; i++){ %>
+			<li data-value="<%= data[i] %>"><input type="text" class="item-value2" disabled value="<%= data[i] %>"> <button class="item-delete">Delete</button><button class="item-edit">Edit</button></li>
+		<% }; %>
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+    header {
+       width: 100%;
+       height: 700px;
+    }
+    .wrapper {
+        min-width: 768px;
+        text-align: center;
+    }
+    .auth_block {
+        width: auto;
+        float: right;
+    }
+    .logo{
+        float: left;
+        width: auto;
+        margin: 0;
+    }
+    .title_1 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+    .title_2 {
+        width: auto;
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    .header_block {
+        width: 700px;
+        margin: 0 auto;
+        padding-bottom: 170px;
+    }
+    .title_search {
+        margin-top: 40px;
+    }
+     .slider_title {
+        margin-top: 100px;
+    }
+    .slider {
+        float: left;
+        width: 242px;
+        height: 400px;
+        margin-right: 10px;
+    }
+    .slider_wrapper {
+        width: 756px;
+    }
+    .slider_list {
+        width: 100%;
+        height: 400px;
+    }
+    .slider_item {
+        width: 242px;
+        height: 400px;
+        margin-bottom: 10px;
+
+        img {
+            width: 242px;
+            height: 400px;
+        }
+    }
+    .slider_content {
+        width: 88%;
+        left: 15px;
+    }
+    .slider_content-text {
+        text-align: left;
+    }
+    .partner-wrapper {
+        margin-top: 100px;
+    }
+     .partner {
+        margin: 0 auto;
+    }
+    .partner_human {
+        width: 24%;
+        min-height: 251px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+     .partner_photo:after {
+        position: inherit;
+    }
+    .partner_text {
+        width: 190px;
+    }
+    .ideas {
+        margin-top: 100px;
+    }
+    .ideas_wrapper {
+        margin-bottom: 100px;
+    }
+    .ideas_image {
+        height: 310px;
+    }
+    .ideas_text {
+        line-height: 310px;
+    }
+    .ideas_form {
+        margin: 40px 10px 0 0;
+    }
+    .ideas_form input {
+        margin-top: 40px;
+        display: inline-block;
+    }
+    .search_ideas{
+        display: inline-block;
+    }
+    .footer {
+        margin-top: 80px;
+        padding: 40px 0 40px 0;
+    }
+    .footer_wrapper {
+        width: 768px;
+    }
+    .logo_link {
+        float: left;
+        margin-right: 17%;
+    }
+    .footer_menu_wrapper {
+        float: left;
+        margin-right: 17%;
+    }
+    .footer_title {
+        margin-top: 0;
+    }
+    .footer_menu {
+        text-align: left;
+        display: block;
+    }
+    .footer_item {
+        line-height: 24px;
+        float: none;
+    }
+    .footer_title {
+        float: left;
+        margin-right: 17%;
+        margin-bottom: 10px;
+    }
+    .footer_logo {
+        margin: 0;
+        float: left;
+    }
+     .grid-item-x1 { 
+    width: 32%; 
+    }
+    .grid-item-x2 { 
+    width: 64%; 
+    }

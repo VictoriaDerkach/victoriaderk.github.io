@@ -91,7 +91,7 @@ header {
     color: #fff;
 }
 .title {
-    margin: 30px 0 0 20px;
+    margin-top: 26px;
 }
 .title_1 {
     font-size: 30px;
@@ -101,7 +101,7 @@ header {
 }
 .title_2 {
     width: 220px;
-    margin: 10px auto;
+    margin: 38px auto;
     font-family: $roboto;
     font-size: 18px;
     color: #fff;
@@ -127,7 +127,7 @@ header {
 }
 .slider_wrapper {
     width: 300px;
-    margin: 20px auto 0;
+    margin: 15px auto 0;
     background-color: #fff;
 }
 .slider_title {
@@ -180,7 +180,8 @@ header {
     color: #fff;
     background-color: #ff4e50;
     @include radius(10px);
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 14px;
     text-align: center;
     font-size: 10px;
     text-transform: uppercase;
@@ -194,7 +195,7 @@ header {
     width: 100%;
     font-size: 24px;
     line-height: 30px;
-    margin: 0 auto;
+    margin: 11px 0 11px 5px;
     text-align: left;
 }
 .slider_content-text {
@@ -202,6 +203,44 @@ header {
     font-family: $roboto;
     font-size: 13px;
     line-height: 17px;
+}
+.slider_arrow {
+    width: 92%;
+    position: absolute;
+    top: 40%;
+    left: 14px;
+    right: 0;
+}
+
+.slider_arrow .lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  cursor: pointer;
+}
+
+.slider_arrow .lnr-chevron-left {
+  color: #d2d2d2;
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+}
+
+.slider_arrow .lnr-chevron-left:hover {
+  color: #fff;
+}
+
+.slider_arrow .lnr-chevron-right {
+  color: #d2d2d2;
+  font-size: 40px;
+  position: absolute;
+  right: 0;
+}
+
+.slider_arrow .lnr-chevron-right:hover {
+  color: #fff;
 }
 .partner {
     text-align: center;
@@ -281,9 +320,9 @@ header {
     font-family: $montserrat;
     font-size: 14px;
     font-weight: bold;
-    min-width: 230px;
+    min-width: 194px;
     height: 40px;
-    margin: 30px auto 0 auto;
+    margin: 22px auto 0 auto;
 }
 .search_partner:hover{
     background-color: #ff4e50;
@@ -301,10 +340,13 @@ header {
     color: #000;
     font-size: 22px;
     font-family: $montserrat_bold;
+    position: relative;
+    bottom: 35px;
+    left: 5px;
 }
 .ideas_image_wrapper {
     width: 100%;
-    margin: 20px 0 40px;
+    margin: 31px 0 40px;
 }
 .ideas_image_wrapper:after {
     text-align: center;
@@ -360,6 +402,8 @@ header {
     color: #000;
     font-size: 18px;
     font-family: $roboto;
+    position: relative;
+    left: 5px;
 }
 .search_ideas {
     text-decoration: none;
@@ -455,11 +499,12 @@ header {
     .auth_block {
         width: auto;
         float: right;
+        margin: 17px 6px 0 0;
     }
     .logo{
         float: left;
         width: auto;
-        margin: 0;
+        margin-top: 28px;
     }
     .title_1 {
         font-size: 52px;
@@ -467,7 +512,7 @@ header {
     }
     .title_2 {
         width: auto;
-        margin-top: 40px;
+        margin-top: 27px;
         font-size: 24px;
     }
     .header_block {
@@ -476,7 +521,7 @@ header {
         padding-bottom: 170px;
     }
     .title_search {
-        margin-top: 40px;
+        margin-top: 26px;
     }
      .slider_title {
         margin-top: 100px;
@@ -485,7 +530,10 @@ header {
         float: left;
         width: 242px;
         height: 400px;
-        margin-right: 10px;
+        margin-right: 15px;
+    }
+    .slider:last-child {
+        margin-right: 0;
     }
     .slider_wrapper {
         width: 756px;
@@ -521,7 +569,7 @@ header {
         vertical-align: middle;
     }
     .ideas {
-        margin-top: 100px;
+        margin-top: 90px;
     }
     .ideas_wrapper {
         margin-bottom: 100px;
@@ -533,14 +581,19 @@ header {
         line-height: 310px;
     }
     .ideas_form {
-        margin: 40px 10px 0 0;
+        margin: 98px 12px 0 0;
     }
     .ideas_form input {
         margin-top: 40px;
         display: inline-block;
+        padding-left: 15px;
+        width: 256px;
     }
     .search_ideas{
         display: inline-block;
+        min-width: 158px;
+        height: 40px;
+        margin: 39px auto 0 auto;
     }
     .footer {
         margin-top: 80px;
@@ -551,7 +604,7 @@ header {
     }
     .logo_link {
         float: left;
-        margin-right: 17%;
+        margin-right: 10%;
     }
     .footer_menu_wrapper {
         float: left;
@@ -575,7 +628,8 @@ header {
     }
     .footer_logo {
         margin: 0;
-        float: left;
+        float: right;
+        margin-top: -9px;
     }
      .grid-item-x1 { 
     width: 32%; 
@@ -588,7 +642,7 @@ header {
 
     header {
         width: 100%;
-        height: 700px;
+        height: 680px;
     }
     .wrapper {
         min-width: 940px;
@@ -597,7 +651,7 @@ header {
         width: 940px;
     }
     .slider_title {
-        margin: 100px auto 0;
+        margin: 98px auto 0;
     }
     .slider_wrapper {
         width: 940px;
@@ -611,22 +665,26 @@ header {
     .partner {
         margin: 0 auto;
     }
+    .partner-wrapper {
+        width: 940px;
+    }
     .partner_human {
         width: 24%;
         min-height: 251px;
         display: inline-block;
         vertical-align: middle;
+        margin: 31px 6px 0 0;
     }
     .footer_wrapper {
         width: 940px;
     }
     .logo_link {
         float: left;
-        margin-right: 20%;
+        letter-spacing: 1px;
     }
     .footer_menu_wrapper {
         float: left;
-        margin-right: 20%;
+        margin-right: 9.6%;
     }
 
     .footer_title{

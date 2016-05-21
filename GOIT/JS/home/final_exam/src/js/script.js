@@ -6,9 +6,15 @@ $(function () {
     .jcarouselAutoscroll({
     	autostart: true,
     	target: '+=1',
-        interval: 2000
+        interval: 5000
     });
 
+    $('.jcarousel-control-prev').click(function(){
+        $(this).parent().parent().find('.jcarousel').jcarousel('scroll', '-=1');
+    });
+    $('.jcarousel-control-next').click(function(){
+        $(this).parent().parent().find('.jcarousel').jcarousel('scroll', '+=1');
+    });
 
     getImages('', 7);
 

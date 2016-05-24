@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="build/css/reset.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <link rel="stylesheet" type="text/css" href="build/css/jcarousel.responsive.css">
-    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>  
     <script type="text/javascript" src="build/js/jcarousel-0.3.4/dist/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <!--script type="text/javascript" src="http://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script-->
     <script src="build/js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="build/js/script.main.js"></script>
-    <!--[if lte IE 8]><link href="build/css/iestyles.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <!--[if lte IE 8]>
+      <script src="build/js/html5shiv.js"></script>  
+      <link href="build/css/iestyles.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
 </head>
 <body>
   <header>
@@ -93,22 +98,22 @@
       <div class="partner-wrapper">
         <h3 class="partner_title">Meet a partner for your best holiday</h3>
         <div class="partner_human">
-            <div class="partner_photo partner_photo_tv"><img src="src/img/hunter.jpg"></div>
+            <div class="partner_photo partner_photo_tv"><img src="src/img/partner1.png"></div>
                 <h6 class="partner_name">Bradley Hunter</h6>
                 <p class="partner_text">Based in Chicago. I love playing tennis and loud music.</p>
         </div>
         <div class="partner_human">
-            <div class="partner_photo partner_photo_cup"><img src="src/img/heather_walker.jpg"></div>
+            <div class="partner_photo partner_photo_cup"><img src="src/img/partner3.png"></div>
             <h6 class="partner_name">Heather Walker</h6>
             <p class="partner_text">I'm a happy person that loves cats and climbing on mountains.</p>
         </div>
         <div class="partner_human">
-            <div class="partner_photo partner_photo_flask"><img src="src/img/lucas_marsha.jpg"></div>
+            <div class="partner_photo partner_photo_flask"><img src="src/img/partner2.png"></div>
             <h6 class="partner_name">Lucas Marsha</h6>
             <p class="partner_text">I get my inspiration from nature and objects around me. I have to colours, typography and skateboards.</p>
         </div>
         <div class="partner_human">
-            <div class="partner_photo partner_photo_airplane"><img src="src/img/bradley_hunter.jpg"></div>
+            <div class="partner_photo partner_photo_airplane"><img src="src/img/partner4.png"></div>
             <h6 class="partner_name">Bradley Hunter</h6>
             <p class="partner_text">I get my inspiration from nature and objects around me.</p>
         </div>
@@ -122,7 +127,7 @@
         </div>
        
         <form class="ideas_form"> 
-        <h5 class="ideas_title">Discover holiday activity ideas</h5>
+        <h5 class="ideas_title_form">Discover holiday activity ideas</h5>
           <div class="ideas_question">Hi! What are your holiday interests?</div>
           <input type="text" placeholder="Enter your interest" id="input_search">
           <button class="search_ideas" id="search">Search partners</button>

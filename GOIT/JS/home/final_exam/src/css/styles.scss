@@ -1,44 +1,42 @@
 $roboto: 'Roboto', courier, sans-serif;
 $montserrat: 'Montserrat', Arial, sans-serif;
 $montserrat_bold: 'Montserrat_Bold', Arial, sans-serif;
-$path-font: '../../src/fonts';
-$path-img: '../../src/img';
-
+$path-font: '../../build/fonts';
+$path-img: '../../build/img';
+$path-css: '../../build/css';
+$path-pie: '../../build/PIE';
 
 @font-face {
     font-family: 'Roboto';
     src: url($path-font+'/Roboto-Light.eot');
     src: url($path-font+'/Roboto-Light.eot?#iefix') format('embedded-opentype'),
-    /*url($path-font+'/Roboto-Light.woff2') format('woff2'),
-    url($path-font+'/Roboto-Light.woff') format('woff'),*/
+    url($path-font+'/Roboto-Light.woff2') format('woff2'),
+    url($path-font+'/Roboto-Light.woff') format('woff'),
     url($path-font+'/Roboto-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'Montserrat';
     src: url($path-font+'/Montserrat-Regular.eot');
     src: url($path-font+'/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-    /*url($path-font+'/Montserrat-Regular.woff2') format('woff2'),
-    url($path-font+'/Montserrat-Regular.woff') format('woff'),*/
+    url($path-font+'/Montserrat-Regular.woff2') format('woff2'),
+    url($path-font+'/Montserrat-Regular.woff') format('woff'),
     url($path-font+'/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'Montserrat_Bold';
     src: url($path-font+'/Montserrat-Bold.eot');
     src: url($path-font+'/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-   /*url($path-font+'/Montserrat-Bold.woff2') format('woff2'),
-    url($path-font+'/Montserrat-Bold.woff') format('woff'),*/
+    url($path-font+'/Montserrat-Bold.woff2') format('woff2'),
+    url($path-font+'/Montserrat-Bold.woff') format('woff'),
     url($path-font+'/Montserrat-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @mixin radius($radius) {
@@ -46,7 +44,7 @@ $path-img: '../../src/img';
     -webkit-border-radius: $radius; /* Safari, Chrome */
     -khtml-border-radius: $radius; /* KHTML */
     border-radius: $radius; /* CSS3 */
-    behavior: url(border-radius.htc); /* IE */
+    behavior: url($path-pie+'/PIE.htc'); /* IE */
 }
 
 .wrapper {
@@ -58,8 +56,9 @@ header {
     width: 100%;
     text-align: center;
     padding-top: 20px;
-    background: url($path-img+"/header.jpeg") 50% 50% no-repeat;
+    background: url( $path-img+"/header-background.png" ) 50% 50% no-repeat;
     background-size: cover;
+
 }
 .auth_block {
     width: 100%;
@@ -337,6 +336,14 @@ header {
     text-align: center;
 }
 .ideas_title {
+    color: #000;
+    font-size: 22px;
+    font-family: $montserrat_bold;
+    position: relative;
+    top: 10px;
+    right: 2px;
+}
+.ideas_title_form {
     color: #000;
     font-size: 22px;
     font-family: $montserrat_bold;

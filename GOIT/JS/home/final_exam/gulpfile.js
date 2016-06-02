@@ -24,10 +24,9 @@ gulp.task('sass:watch', function () {
 gulp.task('js', function() {  
     return gulp.src('src/js/*.js')
         .pipe(concat('script.main.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./build/js/'))
-        //.pipe(rename('script.main.min.js'))
-        //.pipe(gulp.dest('./js/'))
+        //
 });
 
 gulp.task('css', function() {  
